@@ -282,7 +282,7 @@ class EventsController < ApplicationController
     def see_splash
         if !cookies['splash'] && request.format == Mime::HTML
             cookies['splash'] = true
-            redirect_to neighborhoods_url
+            redirect_to splash_url
         end
     end
 end

@@ -111,6 +111,7 @@ Flashvolunteer::Application.routes.draw do
     post "search" => "search#show", :as => "search"
 
     match "privacy" => "home#privacy"
+    match "splash", :to => "home#splash"
     match "tou" => "home#tou"
     match "about" => "home#about"
     match "partners" => "home#partners"

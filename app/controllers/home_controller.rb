@@ -28,6 +28,11 @@ class HomeController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  def splash
+    respond_to do |format|
+      format.html
+    end
+  end
   def sadface
     respond_to do |format|
       format.html
